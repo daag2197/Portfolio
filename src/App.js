@@ -1,16 +1,15 @@
 import React,{ Component } from 'react';
 
 class App extends Component {
-    constructor(){
-        super();
-        this.state = { displayBio: false};
+    state = {
+        displayBio: false
+    };
 
-        this.toogleDisplayBio = this.toogleDisplayBio.bind(this);
-    }
-    
-    //Metodo que oculta y muestra la biografia
-    toogleDisplayBio(){
-        this.setState({displayBio: !this.state.displayBio })
+    //Metodo que oculta y muestra la biografia 
+    toogleDisplayBio = () => {
+        this.setState({
+            displayBio: !this.state.displayBio
+        })
     }
 
     render(){
