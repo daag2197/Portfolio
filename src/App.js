@@ -1,4 +1,7 @@
 import React,{ Component } from 'react';
+import Projects from './Projects';
+import SocialProfiles from './SocialProfiles';
+import profile from './assests/Profile.jpg';
 
 class App extends Component {
     state = {
@@ -15,6 +18,7 @@ class App extends Component {
     render(){
         return(
             <div>
+                < img src = {profile} alt = 'profile' className = "profile" / >
                 <h1>Hello!</h1>
                 <p>My name is Diego Arevalo, I am Computer Enginner</p>
                 <p>I am always learn something different</p>
@@ -31,6 +35,10 @@ class App extends Component {
                        </div> 
                     )
                 }
+                <hr/>
+                <Projects/>
+                <hr/>
+                <SocialProfiles/>
             </div>
         )
     }
