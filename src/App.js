@@ -27,11 +27,11 @@ class App extends Component {
                         <div>
                         <p> I live in Dublin, and I love Practice Table tennis </p>
                         <p>Now I start to learn React.js</p>
-                        <button onClick = {this.toogleDisplayBio}>Show Less</button>
+                        <button onClick = {this.toogleDisplayBio} className = "btn btn-info">Show Less</button>
                         </div>
                     ) : (
                        <div>
-                           <button onClick = {this.toogleDisplayBio}>Read More</button>
+                           <button onClick = {this.toogleDisplayBio} className = "btn btn-info">Read More</button>
                        </div> 
                     )
                 }
