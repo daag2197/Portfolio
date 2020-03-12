@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 const TITLES = [
     'a software enginer',
     'a Table Tennis Lover',
-    'an enthusiastic learner'
+    'an enthusiastic learner',
+    'always learn something different'
 ];
 
 class Title extends Component {
@@ -22,9 +23,9 @@ class Title extends Component {
     animateTitles = () => {
         this.titleInterval = setInterval(() => {
             const titleIndex = (this.state.titleIndex + 1) % TITLES.length;
-
+            
             this.setState({titleIndex,fadeIn:true});
-
+            
             this.timeout = setTimeout(() => this.setState({fadeIn: false}), 2000);
 
         },4000);
@@ -35,7 +36,7 @@ class Title extends Component {
 
         const title = TITLES[this.state.titleIndex];
         return(
-            <p className = { fadeIn ? 'title-fade-in': 'title-fade-out'}>I´m {title}</p>
+            <p>I am {title}</p>
         )
     }
 }
