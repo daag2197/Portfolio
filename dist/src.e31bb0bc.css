@@ -1,3 +1,10 @@
+.headerDiv {
+    padding-top: 2.5%;
+    background-color: #0181bb;   
+}
+.headerFontColor {
+    color: white;
+}
 @font-face {
     font-family: RobotoCondensed;
     src: url(/roboto-condensed.light.6df9fab6.ttf);
@@ -10,7 +17,6 @@
 body {
     text-align: center;
     font-size: 20px;
-    padding: 2.5%;
     font-family: 'RobotoCondensed';
 }
 

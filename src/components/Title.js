@@ -36,7 +36,7 @@ class Title extends Component {
 
         const title = TITLES[this.state.titleIndex];
         return(
-            <p>I am {title}</p>
+            <p className = 'headerFontColor'>I am {title}</p>
         )
     }
 }

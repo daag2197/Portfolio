@@ -2,6 +2,7 @@ import React,{ Component } from 'react';
 import Projects from './Projects';
 import Title from './Title';
 import SocialProfiles from './SocialProfiles';
+import Jokes from './Jokes';
 import profile from '../assests/Profile.jpg';
 
 class App extends Component {
@@ -19,27 +20,31 @@ class App extends Component {
     render(){
         return(
             <div>
-                < img src = {profile} alt = 'profile' className = "profile" / >
-                <h1>Hello!</h1>
-                <p>My name is Diego Arevalo</p>
-                < Title / >
-                {
-                    this.state.displayBio ? (
+                <div className = "headerDiv">
+                    <img src = {profile} alt = 'profile' className = "profile" / >
+                    <h1 className = 'headerFontColor'> Hello! </h1>
+                    <p className = 'headerFontColor'> My name is Diego Arevalo </p>
+                    < Title / >
+                    {
+                        this.state.displayBio ? (
+                            <div>
+                            <p className = 'headerFontColor'> I live in Dublin, and I love Practice Table tennis </p>
+                            <p className = 'headerFontColor'>Now I start to learn React.js</p>
+                            <button onClick = {this.toogleDisplayBio} className = "btn btn-success">Show Less</button>
+                            </div>
+                        ) : (
                         <div>
-                        <p> I live in Dublin, and I love Practice Table tennis </p>
-                        <p>Now I start to learn React.js</p>
-                        <button onClick = {this.toogleDisplayBio} className = "btn btn-info">Show Less</button>
-                        </div>
-                    ) : (
-                       <div>
-                           <button onClick = {this.toogleDisplayBio} className = "btn btn-info">Read More</button>
-                       </div> 
-                    )
-                }
-                <hr/>
+                            <button onClick = {this.toogleDisplayBio} className = "btn btn-success">Read More</button>
+                        </div> 
+                        )
+                    }
+                    <hr/>
+                    </div>
                 <Projects/>
                 <hr/>
                 <SocialProfiles/>
+                <hr/>
+                <Jokes/>
             </div>
         )
     }
