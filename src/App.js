@@ -1,5 +1,6 @@
 import React,{ Component } from 'react';
 import Projects from './Projects';
+import Title from './Title';
 import SocialProfiles from './SocialProfiles';
 import profile from './assests/Profile.jpg';
 
@@ -20,8 +21,9 @@ class App extends Component {
             <div>
                 < img src = {profile} alt = 'profile' className = "profile" / >
                 <h1>Hello!</h1>
-                <p>My name is Diego Arevalo, I am Computer Enginner</p>
+                <p>My name is Diego Arevalo</p>
                 <p>I am always learn something different</p>
+                < Title / >
                 {
                     this.state.displayBio ? (
                         <div>
