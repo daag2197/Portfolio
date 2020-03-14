@@ -10,20 +10,22 @@ class Jokes extends Component {
     componentDidMount() {
         fetch('https://official-joke-api.appspot.com/random_joke')
         .then(response => response.json())
-        .then(json => this.setState({joke:json}));
+        .then(json => this.setState({joke:json}))
+        .catch(err => console.log("Error: " + err));
     }
 
     fetchJokes = () => {
         fetch('https://official-joke-api.appspot.com/random_ten')
         .then(response => response.json())
-        .then(json => this.setState({jokes:json}));
+        .then(json => this.setState({jokes:json}))
+        .catch(err => console.log("Error: " + err));
     }
 
     render() {
         return (
             <div>
                 <h2>Highlighted Joke</h2>
-                <joke joke = {this.state.joke} />
+                <Joke joke = {this.state.joke} />
                 <hr/>
                 <h3>Others Jokes?</h3>
                 <button onClick = {this.fetchJokes} className = 'btn btn-info'>Click me!</button>
