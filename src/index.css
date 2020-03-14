@@ -1,3 +1,11 @@
+.navDiv {
+    background-color: black;
+    text-align: left;
+}
+.navFontColor {
+    color: white;
+    
+}
 .headerDiv {
     padding-top: 2.5%;
     background-color: #0181bb;   

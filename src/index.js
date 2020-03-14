@@ -4,6 +4,7 @@ import {Router,Switch,Route } from 'react-router-dom'
 import createBrowserHistory from 'history/createBrowserHistory';
 import App from './components/App';
 import Jokes from './components/Jokes';
+import Header from './components/Header';
 import './index.css';
 
 
@@ -11,8 +12,8 @@ import './index.css';
 ReactDOM.render(
   <Router history={createBrowserHistory()}>
     <Switch>
-      <Route exact={true} path="/" component={App} />
-      <Route path="/jokes" component={Jokes} />
+      <Route exact={true} path="/" render = {() => <Header><App/></Header>}/>
+      <Route path="/jokes" render = {() => <Header><Jokes/></Header>}/>
     </Switch>
   </Router>,
   document.getElementById("root")
