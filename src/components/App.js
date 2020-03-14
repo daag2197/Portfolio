@@ -3,6 +3,7 @@ import Projects from './Projects';
 import Title from './Title';
 import SocialProfiles from './SocialProfiles';
 import Jokes from './Jokes';
+import Header from './Header';
 import profile from '../assests/Profile.jpg';
 
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
     render(){
         return(
             <div>
+                <Header/>
                 <div className = "headerDiv">
                     <img src = {profile} alt = 'profile' className = "profile" / >
                     <h1 className = 'headerFontColor'> Hello! </h1>
