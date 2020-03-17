@@ -12,6 +12,7 @@ const Header = ({children}) => {
             < div className = 'navDiv' >
                 <h4 style = {style}><Link to = '/' className = 'navFontColor'>Home</Link></h4>
                 <h4 style = {style} ><Link to = '/jokes' className = 'navFontColor'>Jokes</Link></h4>
+                 <h4 style = {style} ><Link to = '/music-master' className = 'navFontColor'>Music Master</Link></h4>
             </div>
             {children}
         </div>
