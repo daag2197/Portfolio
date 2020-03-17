@@ -34350,7 +34350,8 @@ var SocialProfile = function SocialProfile(props) {
       link = _props$socialProfile.link,
       image = _props$socialProfile.image;
   return _react.default.createElement("span", null, _react.default.createElement("a", {
-    href: link
+    href: link,
+    target: "_blank"
   }, _react.default.createElement("img", {
     src: image,
     alt: "social-Profile",

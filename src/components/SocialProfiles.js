@@ -6,7 +6,7 @@ const SocialProfile = props => {
     const {link, image} = props.socialProfile;
     return(
         <span>
-            <a href = {link}>
+            <a href = {link} target = '_blank'>
                 <img src = {image} alt = 'social-Profile' style = {{ width: 35, height: 35,margin: 10}}/>
             </a>
         </span>
