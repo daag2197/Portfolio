@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
+import Button from "components/CustomButtons/Button.js";
 
 const Joke = ({joke: {setup,punchline} }) => (
-    <p className = 'JokesP'>{setup} <em>{punchline}</em></p>
+     <p className = 'JokesP'>{setup} <em>{punchline}</em></p>
 )
 
 class Jokes extends Component {
@@ -24,12 +25,16 @@ class Jokes extends Component {
     render() {
         return (
             <div>
-                <h2>Highlighted Joke</h2>
                 <Joke joke = {this.state.joke} />
                 <hr/>
                 <h3>Others Jokes?</h3>
-                <button onClick = {this.fetchJokes} className = 'btn btn-info'>Click me!</button>
+
                 { this.state.jokes.map(joke => (<Joke key = {joke.id} joke = {joke} />))}
+                <Button
+                onClick = {this.fetchJokes}
+                color = "primary">
+                    Click me!
+                </Button>
             </div>
         );
     }
