@@ -33,7 +33,7 @@ import project3 from "assets/img/projects/project3.jpg";
 
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.js";
 
-import Joke from "../../components/jokes.js";
+import Joke from "./jokes.js"
 import { card } from "assets/jss/material-kit-pro-react";
 
 const useStyles = makeStyles(profilePageStyle);
