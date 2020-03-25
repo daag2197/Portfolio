@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.8b548ac0.chunk.css",
+    "main.js": "/Portfolio/static/js/main.7d32b88a.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.7d32b88a.chunk.js.map",
+    "runtime~main.js": "/Portfolio/static/js/runtime~main.4b3de30f.js",
+    "runtime~main.js.map": "/Portfolio/static/js/runtime~main.4b3de30f.js.map",
+    "static/js/2.0e1f0f21.chunk.js": "/Portfolio/static/js/2.0e1f0f21.chunk.js",
+    "static/js/2.0e1f0f21.chunk.js.map": "/Portfolio/static/js/2.0e1f0f21.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "precache-manifest.50b6598a8cee5f1a025f2e72333735c1.js": "/Portfolio/precache-manifest.50b6598a8cee5f1a025f2e72333735c1.js",
+    "service-worker.js": "/Portfolio/service-worker.js",
+    "static/css/main.8b548ac0.chunk.css.map": "/Portfolio/static/css/main.8b548ac0.chunk.css.map",
+    "static/media/Code.jpg": "/Portfolio/static/media/Code.7cef10cf.jpg",
+    "static/media/Diego.jpg": "/Portfolio/static/media/Diego.8dae4a78.jpg",
+    "static/media/clint-mckoy.jpg": "/Portfolio/static/media/clint-mckoy.5b7c1cad.jpg",
+    "static/media/project1.jpg": "/Portfolio/static/media/project1.9fd9e7f8.jpg",
+    "static/media/project2.jpg": "/Portfolio/static/media/project2.d99ed06e.jpg",
+    "static/media/project3.jpg": "/Portfolio/static/media/project3.c7ee3096.jpg"
+  }
+}
