@@ -273,7 +273,7 @@ export default function ProfilePage({ ...rest }) {
         content={
           <div>
             <div className={classes.center}>
-              &copy; {1900 + new Date().getYear()} , made with{" "}
+              &copy; {1900 + new Date().getYear()} , made {" "}
               by{" "}
               Diego Arevalo
             </div>
